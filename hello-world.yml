@@ -9,18 +9,7 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello World"
-name: CI Workflow
-
-on:
-  push:
-  pull_request:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
+              - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -33,3 +22,5 @@ jobs:
 
       - name: Run linter
         run: npm run lint
+
+name: CI Workflow
