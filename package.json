@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "echo 'hgjgnghf'"
   },
   "dependencies": {
     "lint": "^0.8.19"
