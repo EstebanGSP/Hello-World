@@ -1,15 +1,14 @@
-name: Hello World Workflow
+name: CI Workflow
 on:
   push:
     branches:
       - main
+  pull_request:
 jobs:
-  greeting:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
-              - name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -22,5 +21,3 @@ jobs:
 
       - name: Run linter
         run: npm run lint
-
-name: CI Workflow
