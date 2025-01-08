@@ -11,10 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    env:
-      MESSAGE: Déploiement réussi
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
